@@ -49,7 +49,7 @@ class Boat: Transport {
 }
 
 // Функция, принимающая объект типа Transport и вызывающая его методы start и stop
-func operateTransport(_ vehicle: Transport) {
+func vehicle(_ vehicle: Transport) {
     vehicle.start()
     vehicle.stop()
 }
