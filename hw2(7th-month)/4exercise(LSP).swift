@@ -49,9 +49,24 @@ class Boat: Transport {
 }
 
 // Функция, принимающая объект типа Transport и вызывающая его методы start и stop
-func vehicle(_ vehicle: Transport) {
-    vehicle.start()
-    vehicle.stop()
+func transport(_ transport: Transport) {
+    transport.start()
+    transport.stop()
+    
+    
+    let car = Carr()
+    let bicycle = Bicycle()
+    let boat = Boat()
+    
+    car.start()
+    car.stop()
+    
+    bicycle.start()
+    bicycle.stop()
+    
+    boat.start()
+    boat.stop()
+    
 }
 
 //Объяснение: Принцип подстановки Лисков (Liskov Substitution Principle, LSP) гласит, что подтипы должны быть заменяемыми своими базовыми типами без изменения. Это означает, что объекты подтипов должны: Расширять поведение базовых типов через наследование. Сохранять контракты базовых типов при замещении их методов. Безопасно заменять объекты классы и прочее. Короче говоря безопасность в замене. И главная суть что двое классов не должны зависеть друг от друга.
